@@ -22,3 +22,6 @@ First thing is to build the container, I am tagging it with the name rust.
 Make sure you have a directory called `data` where you launch the following command.
 
 Run the command `docker-compose up -d`
+
+## Oxide
+The `/data/oxide` directory contains some default oxide settings such as better loot.
