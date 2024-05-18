@@ -1,8 +1,8 @@
 # Simple Rust Server (Docker)
-This is a very simple implementation of the rust game server using steamcmd in docker
+This is a very simple installation of rust and oxide.
 
 ## Environment variables
-Set the following setting for your server (defaults set in docker compose)
+Set the following setting for your server (defaults set in docker compose).
 
 | Variable             | Description                                  |
 | -------------------- | -------------------------------------------- |
@@ -15,10 +15,10 @@ Set the following setting for your server (defaults set in docker compose)
 | ENABLE_OXIDE         | Whether or not to install oxide (true|false) |
 
 ## Build
-First thing is to build the container, I am tagging it with the name rust
+First thing is to build the container, I am tagging it with the name rust.
 ```docker build . -t rust```
 
 ## Start
-Make sure you have a directory called `data` where you launch the following command
+Make sure you have a directory called `data` where you launch the following command.
 
 Run the command `docker-compose up -d`
