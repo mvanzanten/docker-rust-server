@@ -6,4 +6,5 @@ This is a very simple implementation of the rust game server using steamcmd
 
 ## Start
 Make sure you have a directory called `data` where you launch the command below
+
 `docker-compose up -d`
