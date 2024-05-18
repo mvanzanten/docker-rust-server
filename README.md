@@ -1,5 +1,5 @@
 # Simple Rust Server (Docker)
-This is a very simple installation of rust and oxide.
+This is a very simple installation of rust server and oxide.
 
 ## Environment variables
 Set the following setting for your server (defaults set in docker compose).
