@@ -1,5 +1,18 @@
-# Simple Rust Server
-This is a very simple implementation of the rust game server using steamcmd
+# Simple Rust Server (Docker)
+This is a very simple implementation of the rust game server using steamcmd in docker
+
+## Environment variables
+Set the following setting for your server (defaults set in docker compose)
+
+| Variable               | Description                                  |
+| ---------------------- | -------------------------------------------- |
+| SERVER_PORT            | The port to host the server (28015)          |
+| SERVER_HOSTNAME        | The name to set for the server (LemonAid)    |
+| SERVER_SEED=32345      | The seed to set the map design (32345)       |
+| SERVER_SAVE_INTERVAL   | Frequency in seconds to save game (300)      |
+| SERVER_MAX_PLAYERS=75  | Max player count (75)                        |
+| SERVER_WORLD_SIZE=4092 | The world size (4092)                        |
+| ENABLE_OXIDE=true      | Whether or not to install oxide (true|false) |
 
 ## Build
 First thing is to build the container, I am tagging it with the name rust
