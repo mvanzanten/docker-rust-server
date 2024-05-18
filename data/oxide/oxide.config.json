@@ -17,16 +17,5 @@
     "Shutdown on idle": true,
     "Seconds before idle": 60,
     "Preprocessor directives": []
-  },
-  "OxideConsole": {
-    "Enabled": true,
-    "MinimalistMode": true,
-    "ShowStatusBar": true
-  },
-  "OxideRcon": {
-    "Enabled": false,
-    "Port": 25580,
-    "Password": "eVr&5UqiL&5QR1UoMpYhtWNNWbv0e&GQ",
-    "ChatPrefix": "[Server Console]"
   }
 }
