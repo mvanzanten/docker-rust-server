@@ -1,7 +1,7 @@
 version: "3"
 services:
   rust:
-    image: rust
+    image: rust:latest
     container_name: rust
     environment:
       - SERVER_PORT=28015
@@ -10,6 +10,7 @@ services:
       - SERVER_SAVE_INTERVAL=300
       - SERVER_MAX_PLAYERS=75
       - SERVER_WORLD_SIZE=4092
+      - ENABLE_OXIDE=true
     ports:
       - "28015:28015/udp"
       - "28016:28016"
