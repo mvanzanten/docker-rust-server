@@ -10,6 +10,7 @@ services:
       - SERVER_SAVE_INTERVAL=300
       - SERVER_MAX_PLAYERS=75
       - SERVER_WORLD_SIZE=4092
+      - APP_PORT=28082
       - RCON_PORT=28016
       - RCON_PASSWORD=change_me
       - DECAY_SCALE=0
