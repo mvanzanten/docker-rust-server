@@ -15,13 +15,19 @@ Set the following setting for your server (defaults set in docker compose).
 | **ENABLE_OXIDE**         | Whether or not to install oxide (true, false) |
 
 ## Build
-First thing is to build the container, I am tagging it with the name rust.
-```docker build . -t rust```
+First thing is to build the container, it uses the `APP_NAME` from the top of the `Makefile`.
 
-## Start
-Make sure you have a directory called `data` where you launch the following command.
+```make build``` 
 
-Run the command `docker-compose up -d`
+## Run
+Make sure you have a directory called `data` in the directory where you launch the run command. This is where the game will be installed and where we have the oxide mods.
+
+```make run```
+
+## Stop
+Stop the container with the stop command, or from Docker Desktop.
+
+```make stop```
 
 ## Oxide
 The `/data/oxide` directory contains some default oxide settings such as better loot.
