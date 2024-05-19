@@ -1,5 +1,7 @@
 # Simple Rust Server (Docker)
-This is a very simple installation of rust server and oxide. No Rcon. Docker image can be found here [uacmarine556/rust](https://hub.docker.com/r/uacmarine556/rust).
+This is a very simple installation of rust server and oxide with some of my preferred mods. No Rcon. 
+
+Docker image can be found here [uacmarine556/rust](https://hub.docker.com/r/uacmarine556/rust).
 ## Environment variables
 Set the following setting for your server (defaults set in docker compose).
 
