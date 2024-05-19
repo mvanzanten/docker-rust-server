@@ -32,4 +32,4 @@ Stop the container with the stop command, or from Docker Desktop.
 ```make stop```
 
 ## Oxide
-The `/data/oxide` directory contains some default oxide settings such as better loot.
+The `/data/oxide` directory contains some of my preferred oxide mods such as better loot.
