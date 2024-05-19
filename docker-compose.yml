@@ -10,6 +10,7 @@ services:
       - SERVER_SAVE_INTERVAL=300
       - SERVER_MAX_PLAYERS=75
       - SERVER_WORLD_SIZE=4092
+      - DECAY_SCALE=0
       - ENABLE_OXIDE=true
     ports:
       - "28015:28015/udp"

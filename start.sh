@@ -21,5 +21,6 @@ fi
     +server.maxplayers $SERVER_MAX_PLAYERS \
     +server.worldsize $SERVER_WORLD_SIZE \
     +server.identity $SERVER_HOSTNAME \
+    +decay.scale $DECAY_SCALE \
     +nav_disable \
     -logfile -
