@@ -38,10 +38,16 @@ Stop the container with the stop command, or from Docker Desktop.
 ## Port Forwarding
 If running this in your home network you will need to port forward `28015/udp, 28016/tcp, 28082/tcp` from your router to the local IP of the rust server. You will also need to make sure the same `ports:protocols` are open on the server firewall.
 
-Testing port forward (netcat):
+Testing port forward (netcat)
 ```
 nc -v -u local_ip 28015
 nc -v -u public_ip 28015
+
+telnet local_ip 28016
+telnet public_ip 28016
+
+telnet local_ip 28082
+telnet public_ip 28082
 ```
 
 ## Oxide
