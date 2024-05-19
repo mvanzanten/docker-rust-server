@@ -1,9 +1,9 @@
 # Simple Rust Server (Docker)
-This is a very simple installation of rust server and oxide with some of my preferred mods. No Rcon. 
+This is a very simple installation of rust server and oxide with some of my preferred oxide mods. No Rcon. 
 
 Docker image can be found here [uacmarine556/rust](https://hub.docker.com/r/uacmarine556/rust).
 ## Environment variables
-Set the following setting for your server (defaults set in docker compose).
+Set the following setting for your server (values are set in docker compose).
 
 | Variable                 | Description                                   |
 | ------------------------ | --------------------------------------------- |
@@ -16,17 +16,18 @@ Set the following setting for your server (defaults set in docker compose).
 | **DECAY_SCALE**          | The decay scale for buildings (0)             |
 | **ENABLE_OXIDE**         | Whether or not to install oxide (true, false) |
 
-## Build
+## Usage
+### Build
 First thing is to build the container, it uses the `APP_NAME` from the top of the `Makefile`.
 
 ```make build``` 
 
-## Run
+### Run
 Make sure you have a directory called `data` in the directory where you launch the run command. This is where the game will be installed and where we have the oxide mods.
 
 ```make run```
 
-## Stop
+### Stop
 Stop the container with the stop command, or from Docker Desktop.
 
 ```make stop```
