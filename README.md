@@ -13,6 +13,7 @@ Set the following setting for your server (values are set in docker compose).
 | **SERVER_SAVE_INTERVAL** | Frequency in seconds to save game (300)       |
 | **SERVER_MAX_PLAYERS**   | Max player count (75)                         |
 | **SERVER_WORLD_SIZE**    | The world size (4092)                         |
+| **APP_PORT**             | The port to set for Rust+ (28082)             |
 | **RCON_PORT**            | The port to set for RCON (28016)              |
 | **RCON_PASSWORD**        | The password to set for RCON (change_me)      |
 | **DECAY_SCALE**          | The decay scale for buildings (0)             |
