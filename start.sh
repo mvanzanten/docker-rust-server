@@ -13,7 +13,9 @@ fi
 
 # Run server
 ./RustDedicated \
-    +rcon.web 0 \
+    +rcon.web 1 \
+    +rcon.port $RCON_PORT \
+    +rcon.password $RCON_PASSWORD \
     +server.port $SERVER_PORT \
     +server.hostname $SERVER_HOSTNAME \
     +server.seed $SERVER_SEED \

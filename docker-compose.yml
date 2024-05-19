@@ -10,11 +10,14 @@ services:
       - SERVER_SAVE_INTERVAL=300
       - SERVER_MAX_PLAYERS=75
       - SERVER_WORLD_SIZE=4092
+      - RCON_PORT=28016
+      - RCON_PASSWORD=change_me
       - DECAY_SCALE=0
       - ENABLE_OXIDE=true
     ports:
       - "28015:28015/udp"
-      - "28016:28016"
+      - "28016:28016/tcp"
+      - "28082:28082/tcp"
     volumes: 
       - ./data:/data
     restart: unless-stopped

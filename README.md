@@ -1,5 +1,5 @@
 # Simple Rust Server (Docker)
-This is a very simple installation of rust server and oxide with some of my preferred oxide mods. No Rcon. 
+This is a very simple installation of rust server and oxide with some of my preferred oxide mods.
 
 Docker image can be found here [uacmarine556/rust](https://hub.docker.com/r/uacmarine556/rust).
 ## Environment variables
@@ -13,6 +13,8 @@ Set the following setting for your server (values are set in docker compose).
 | **SERVER_SAVE_INTERVAL** | Frequency in seconds to save game (300)       |
 | **SERVER_MAX_PLAYERS**   | Max player count (75)                         |
 | **SERVER_WORLD_SIZE**    | The world size (4092)                         |
+| **RCON_PORT**            | The port to set for RCON (28016)              |
+| **RCON_PASSWORD**        | The password to set for RCON (change_me)      |
 | **DECAY_SCALE**          | The decay scale for buildings (0)             |
 | **ENABLE_OXIDE**         | Whether or not to install oxide (true, false) |
 
@@ -31,6 +33,15 @@ Make sure you have a directory called `data` in the directory where you launch t
 Stop the container with the stop command, or from Docker Desktop.
 
 ```make stop```
+
+## Port Forwarding
+If running this in your home network you will need to port forward `28015/udp, 28016/tcp, 28082/tcp` from your router to the local IP of the rust server. You will also need to make sure the same `ports:protocols` are open on the server firewall.
+
+Testing port forward (netcat):
+```
+nc -v -u local_ip 28015
+nc -v -u public_ip 28015
+```
 
 ## Oxide
 The `/data/oxide` directory contains some of my preferred oxide mods such as better loot.

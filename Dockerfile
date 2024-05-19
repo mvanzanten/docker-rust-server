@@ -44,7 +44,7 @@ WORKDIR /data
 
 EXPOSE 28015/udp
 EXPOSE 28016/tcp
-EXPOSE 28016/udp
+EXPOSE 28082/tcp
 
 ENTRYPOINT ["/bin/bash"]
 CMD ["/app/start.sh"]
