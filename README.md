@@ -1,5 +1,6 @@
 # Simple Rust Server (Docker)
 ![example workflow](https://github.com/mvanzanten/docker-rust-server/actions/workflows/build.yml/badge.svg)
+
 This is a very simple installation of rust server and oxide with some of my preferred oxide mods.
 
 Docker image can be found here [uacmarine556/rust](https://hub.docker.com/r/uacmarine556/rust).
